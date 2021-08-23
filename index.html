@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>App del tiempo</title>
+</head>
+<body onload="onLoad()">
+
+<div class="container-global">
+
+    <div id="container">
+       <div>
+           <h2 id="localizacion"></h2>
+       </div>
+       <div class="container-fecha">
+        <div id="fecha"></div>
+        <div id="hora"></div>
+       </div>
+       <div id="temperatura"></div>
+       <div id="max_min"></div>
+       <div id="iconElement">
+        <img src="icons/unknown.png">
+       </div>
+       <div id="descripcion"></div>
+       <div id="humedad"></div>
+       <div id="presion"></div>
+       <div id="wind"></div>
+       
+    </div>
+
+    
+    
+</div>
+
+    <div id="loading" class="loader">Loading...</div>
+    <script src="./index.js"></script>
+</body>
+</html>

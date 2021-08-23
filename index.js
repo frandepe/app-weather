@@ -3,6 +3,7 @@ const loading = document.getElementById('loading');
 const hora = document.getElementById('hora');
 const iconElement = document.getElementById('iconElement');
 const max_min = document.getElementById('max_min');
+const contGlobal = document.getElementById('contGlobal');
 
 const API_KEY = 'ffe8108b9ee0e9e7609237c7f0915455';
 
@@ -36,6 +37,8 @@ const setWeatherData = (data) => {
 
     const icon = data.weather[0].icon;
     iconElement.innerHTML = `<img src="icons/${icon}.png"></img>`;
+
+
 
     //iterar las keys de nuestro objeto
     //setearlas con la info que tiene cada key
@@ -78,6 +81,15 @@ const clock = () =>{
         }
         if(minutos<10){
             minutos = "0" + minutos;
+        }
+        if(horas>=0 && horas<=5){
+            contGlobal.style.backgroundImage = 'url(fondoNoche.jpg)';
+        }
+        if(horas>=6 && horas<=18){
+            contGlobal.style.backgroundImage = 'url(fondoDia.jpg)';
+        }
+        if(horas>=19 && horas<=23){
+            contGlobal.style.backgroundImage = 'url(fondoNoche.jpg)';
         }
        
     

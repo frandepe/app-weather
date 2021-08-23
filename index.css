@@ -20,8 +20,8 @@ body{
     background-position: center;
     height: 100vh;
     width: 100vw;
-	background-size: cover;
-    background-image: url(/fondo-clima.jpg);
+  	background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;

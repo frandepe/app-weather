@@ -45,14 +45,14 @@ const setWeatherData = (data) => {
         document.getElementById(key).textContent = weatherData[key]
     });
 
-    /*esperar();*/
+    esperar();
     
 }
-/*
+
 const esperar = () => {
     loading.style.display='none';
     container.style.display='flex';
-}*/
+}
 
 const getDate = () =>{
     let date = new Date();
